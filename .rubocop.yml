@@ -1,0 +1,23 @@
+inherit_gem:
+  armitage-rubocop:
+    - lib/rubocop.general.yml
+    - lib/rubocop.rake.yml
+    - lib/rubocop.rspec.yml
+
+AllCops:
+  TargetRubyVersion: 2.7.1
+  Include:
+    - lib/**/*.rb
+    - spec/**/*.rb
+    - Gemfile
+    - Rakefile
+    - smart_value-object.gemspec
+    - bin/console
+
+# NOTE: It is not suitable for infrastracture-level frameworks
+Metrics/ParameterLists:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - lib/smart_core/value-object.rb
