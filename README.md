@@ -2,6 +2,14 @@
 
 ---
 
+## Major featurs
+
+- `attribute` and `property` semantics;
+- primitive immutability based on `#freeze` invocation on value object instance;
+- read-only instance attributes and properties;
+
+---
+
 ## Installation
 
 ```ruby
@@ -16,6 +24,15 @@ gem install smart_value-object
 
 ```ruby
 require 'smart_core/value-object'
+```
+
+---
+
+## Synopsis
+
+```ruby
+class Address < SmartCore::ValueObject
+end
 ```
 
 ---

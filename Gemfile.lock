@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     smart_value-object (0.1.0)
-      smart_initializer (~> 0.2)
+      smart_initializer (~> 0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -80,9 +80,9 @@ GEM
       simplecov-html (~> 0.11)
     simplecov-html (0.12.2)
     smart_engine (0.7.0)
-    smart_initializer (0.2.0)
+    smart_initializer (0.3.2)
       qonfig (~> 0.24)
-      smart_engine (~> 0.6)
+      smart_engine (~> 0.7)
       smart_types (~> 0.1.0)
     smart_types (0.1.0)
       smart_engine (~> 0.6)

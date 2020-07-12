@@ -7,5 +7,4 @@ module SmartCore::ValueObject::Interface
   require_relative 'interface/comparable'
   require_relative 'interface/enumerable'
   require_relative 'interface/serializable'
-  require_relative 'interface/immutable'
 end

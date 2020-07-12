@@ -19,7 +19,9 @@ module SmartCore
     include Interface::Enumerable
     # @since 0.1.0
     include Interface::Serializable
-    # @since 0.1.0
-    include Interface::Immutable
+
+    # @!method <=>(another_object)
+    # @!method eql?(another_object)
+    # @!method each(&block)
   end
 end
