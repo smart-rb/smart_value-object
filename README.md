@@ -33,7 +33,29 @@ require 'smart_core/value-object'
 
 ```ruby
 class Address < SmartCore::ValueObject
+  attribute :country, 'string'
+  attribute :city,    'string'
+  property :location, 'string'
+  property :capital,  'boolean'
 end
+khabarovsk = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
+```
+
+```
+khabarovsk.country # => 'Russia'
+khabarovsk.city # => 'Khabarovsk'
+khabarovsk.location # => '48.4814/135.0721'
+khabarovsk.capital # => false
+```
+
+```ruby
+khabarovsk.to_h # or #as_hash or #to_hash
+# => returns:
+{ city: 'Russia', country: 'Khabaovsk', location: '48.4814/135.0721', capital: false }
+```
+
+``ruby
+khabarovsk.frozen? # => true
 ```
 
 ---
