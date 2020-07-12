@@ -27,7 +27,7 @@ module SmartCore::ValueObject::Interface::Constructor
   module AttributeAccess
     # @return [Hash<Symbol,Any>]
     #
-    # @note strongly dependes on SmartCore::Initializer implementaiton
+    # @note strongly depends on SmartCore::Initializer implementaiton
     #
     # @api public
     # @since 0.1.0
@@ -37,7 +37,7 @@ module SmartCore::ValueObject::Interface::Constructor
 
     # @return [Hash<Symbol,Any>]
     #
-    # @note strongly dependes on SmartCore::Initializer implementaiton
+    # @note strongly depends on SmartCore::Initializer implementaiton
     #
     # @api public
     # @since 0.1.0
@@ -47,7 +47,7 @@ module SmartCore::ValueObject::Interface::Constructor
 
     # @return [Hash<Symbol,Any>]
     #
-    # @note strongly dependes on SmartCore::Initializer implementaiton
+    # @note strongly depends on SmartCore::Initializer implementaiton
     #
     # @api public
     # @since 0.1.0
@@ -63,7 +63,7 @@ module SmartCore::ValueObject::Interface::Constructor
       # @param instance [SmartCore::ValueObject]
       # @return [void]
       #
-      # @note strongly dependes on SmartCore::Initializer implementation
+      # @note strongly depends on SmartCore::Initializer implementation
       #
       # @api private
       # @since 0.1.0
@@ -73,7 +73,7 @@ module SmartCore::ValueObject::Interface::Constructor
 
       # @return [Proc]
       #
-      # @note strongly dependes on SmartCore::Initializer implementation
+      # @note strongly depends on SmartCore::Initializer implementation
       #
       # @api private
       # @since 0.1.0

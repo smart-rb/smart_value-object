@@ -38,6 +38,13 @@ RSpec.describe 'Smoke tests' do
       expect(khabarovsk_address).not_to respond_to(:street=)
       expect(khabarovsk_address).not_to respond_to(:house=)
       expect(khabarovsk_address).not_to respond_to(:cords=)
+
+      expect(khabarovsk_address.to_h).to match({
+        city: 'Khabarovsk',
+        street: 'Bolshaia',
+        house: 10,
+        cords: 22.1
+      })
     end
 
     aggregate_failures do
@@ -66,6 +73,13 @@ RSpec.describe 'Smoke tests' do
       expect(saint_petersburg_address).not_to respond_to(:street=)
       expect(saint_petersburg_address).not_to respond_to(:house=)
       expect(saint_petersburg_address).not_to respond_to(:cords=)
+
+      expect(saint_petersburg_address.to_h).to match({
+          city: 'Saint-Petersburg',
+        street: 'Komenda',
+        house: 5,
+        cords: 0.1
+      })
     end
   end
 end
