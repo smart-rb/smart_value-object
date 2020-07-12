@@ -40,6 +40,7 @@ class Address < SmartCore::ValueObject
   property :location, 'string'
   property :capital,  'boolean'
 end
+
 khabarovsk = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
 ```
 
