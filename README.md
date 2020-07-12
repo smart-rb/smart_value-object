@@ -7,7 +7,7 @@
 - `attribute` and `property` semantics;
 - primitive immutability based on `#freeze` invocation on value object instance;
 - read-only instance attributes and properties;
-- serializable to hash (other formats coming soon);
+- support for hash representation (other formats coming soon);
 
 ---
 
