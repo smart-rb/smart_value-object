@@ -24,7 +24,7 @@ module SmartCore::ValueObject::Interface::Enumerable
     # @api public
     # @since 0.1.0
     def each(&block)
-      block_given? ? yield(self) : (Enumerator::Yielder.new { |yielder| yielder.yield(self) })
+      block_given? ? yield(self) : (Enumerator.new { |yielder| yielder.yield(self) }.each)
     end
   end
 end

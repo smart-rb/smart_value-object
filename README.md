@@ -10,7 +10,10 @@ Value Object pattern realized in scope of Ruby.
 - primitive immutability based on `#freeze` invocation;
 - read-only instance attributes and properties;
 - support for hash representation (other formats coming soon);
-- support for comparability (`Comparable`, `#<=>`) and enumerability (`Enumerable`, `#each`);
+- support for:
+  - semantic comparability (`Comparable`, `#<=>`, `#eql?`) (based on object's type and object's attributes and parameters);
+  - semantic enumerability (`Enumerable`, `#each`) (enumerates itself by default);
+  - (`soon`) `#clone` and `#dup`;
 
 ---
 
@@ -43,6 +46,8 @@ class Address < SmartCore::ValueObject
 end
 
 khabarovsk = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
+same_city = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
+another_city = Address.new('Russia', 'Moscow', location: '59.9311/30.3609', capital: false)
 ```
 
 ```ruby
@@ -60,6 +65,18 @@ khabarovsk.capital # => false
 khabarovsk.to_h # or #as_hash or #to_hash
 # => returns:
 { city: 'Russia', country: 'Khabaovsk', location: '48.4814/135.0721', capital: false }
+```
+
+```ruby
+# comparability:
+khabarovsk == same_city # => true
+khabarovsk == another_city # false
+```
+
+```ruby
+# default Enumerable behavior:
+khabarovsk.to_a # => [khabarovsk]
+khabarovsk.each { |entity| puts entity } # => outputs itself
 ```
 
 ---

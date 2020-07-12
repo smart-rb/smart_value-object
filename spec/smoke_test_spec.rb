@@ -80,6 +80,14 @@ RSpec.describe 'Smoke tests' do
         house: 5,
         cords: 0.1
       })
+
+      expect(khabarovsk_address == khabarovsk_address).to eq(true)
+      expect(saint_petersburg_address == saint_petersburg_address).to eq(true)
+      expect(khabarovsk_address == saint_petersburg_address).to eq(false)
+      expect(khabarovsk_address > saint_petersburg_address).to eq(false)
+      expect(khabarovsk_address < saint_petersburg_address).to eq(false)
+      expect(khabarovsk_address >= saint_petersburg_address).to eq(false)
+      expect(khabarovsk_address <= saint_petersburg_address).to eq(false)
     end
   end
 end

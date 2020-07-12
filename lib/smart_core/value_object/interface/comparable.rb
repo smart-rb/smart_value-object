@@ -23,8 +23,53 @@ module SmartCore::ValueObject::Interface::Comparable
     #
     # @api public
     # @since 0.1.0
-    def <=>(another_object)
+    def <(another_object)
       false
     end
+
+    # @param another_object [Any]
+    # @return [Boolean]
+    #
+    # @api public
+    # @since 0.1.0
+    def <=(another_object)
+      false
+    end
+
+    # @param another_object [Any]
+    # @return [Boolean]
+    #
+    # @api public
+    # @since 0.1.0
+    def >(another_object)
+      false
+    end
+
+    # @param another_object [Any]
+    # @return [Boolean]
+    #
+    # @api public
+    # @since 0.1.0
+    def >=(another_object)
+      false
+    end
+
+    # @param another_object [SmartCore::ValueObject]
+    # @return [Boolean]
+    #
+    # @api public
+    # @since 0.1.0
+    def eql?(another_object)
+      self.class <= another_object.class && (
+        self.class.__params__.all? do |attribute|
+          self.__send__(attribute.name) == another_object.__send__(attribute.name)
+        end
+      ) && (
+        self.class.__options__.all? do |property|
+          self.__send__(property.name) == another_object.__send__(property.name)
+        end
+      )
+    end
+    alias_method :==, :eql?
   end
 end
