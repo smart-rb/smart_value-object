@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors = ['Rustam Ibragimov']
   spec.email   = ['iamdaiver@gmail.com']
 
-  spec.summary     = 'ValueObject pattern realization for any Ruby project'
-  spec.description = 'ValueObject pattern realization for any Ruby project'
+  spec.summary     = 'ValueObject pattern realized in scope of Ruby.'
+  spec.description = 'ValueObject pattern realized in scope of Ruby.'
   spec.homepage    = 'https://github.com/smart-rb/smart_value-object'
   spec.license     = 'MIT'
 
