@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe 'Smoke tests' do
-  specify '' do
+  specify 'value object definition' do
     class CityAddress < SmartCore::ValueObject
       attribute :city, 'string', strict: true
       attribute :street, 'string', strict: true
