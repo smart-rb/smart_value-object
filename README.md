@@ -70,7 +70,7 @@ khabarovsk.to_h # or #as_hash or #to_hash
 ```ruby
 # comparability:
 khabarovsk == same_city # => true
-khabarovsk == another_city # false
+khabarovsk == another_city # => false
 ```
 
 ```ruby
