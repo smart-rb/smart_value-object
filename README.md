@@ -45,6 +45,10 @@ khabarovsk = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', ca
 ```
 
 ```ruby
+khabarovsk.frozen? # => true
+```
+
+```ruby
 khabarovsk.country # => 'Russia'
 khabarovsk.city # => 'Khabarovsk'
 khabarovsk.location # => '48.4814/135.0721'
@@ -55,10 +59,6 @@ khabarovsk.capital # => false
 khabarovsk.to_h # or #as_hash or #to_hash
 # => returns:
 { city: 'Russia', country: 'Khabaovsk', location: '48.4814/135.0721', capital: false }
-```
-
-```ruby
-khabarovsk.frozen? # => true
 ```
 
 ---
