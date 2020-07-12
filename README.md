@@ -7,7 +7,7 @@ Value Object pattern realized in scope of Ruby.
 ## Major featurs
 
 - `attribute` and `property` semantics;
-- primitive immutability based on `#freeze` invocation on value object instance;
+- primitive immutability based on `#freeze` invocation;
 - read-only instance attributes and properties;
 - support for hash representation (other formats coming soon);
 
@@ -43,7 +43,7 @@ end
 khabarovsk = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
 ```
 
-```
+```ruby
 khabarovsk.country # => 'Russia'
 khabarovsk.city # => 'Khabarovsk'
 khabarovsk.location # => '48.4814/135.0721'
@@ -56,7 +56,7 @@ khabarovsk.to_h # or #as_hash or #to_hash
 { city: 'Russia', country: 'Khabaovsk', location: '48.4814/135.0721', capital: false }
 ```
 
-``ruby
+```ruby
 khabarovsk.frozen? # => true
 ```
 
