@@ -11,6 +11,20 @@ module SmartCore::ValueObject::Interface::Enumerable
     # @since 0.1.0
     def included(base_klass)
       base_klass.include(::Enumerable)
+      base_klass.include(Enumerability)
+    end
+  end
+
+  # @api private
+  # @since 0.1.0
+  module Enumerability
+    # @param block [Block]
+    # @return [Enumerable]
+    #
+    # @api public
+    # @since 0.1.0
+    def each(&block)
+      block_given? ? yield(self) : (Enumerator::Yielder.new { |yielder| yielder.yield(self) })
     end
   end
 end

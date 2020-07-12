@@ -10,6 +10,7 @@ Value Object pattern realized in scope of Ruby.
 - primitive immutability based on `#freeze` invocation;
 - read-only instance attributes and properties;
 - support for hash representation (other formats coming soon);
+- support for comparability (`Comparable`, `#<=>`) and enumerability (`Enumerable`, `#each`);
 
 ---
 
