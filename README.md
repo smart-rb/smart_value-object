@@ -39,7 +39,7 @@ require 'smart_core/value-object'
 
 ```ruby
 class Address < SmartCore::ValueObject
-  attribute :country, 'value.string' # an alias of SmartCore::Types::Value::String (check smart_initialzer gem)
+  attribute :country, 'value.string' # an alias of SmartCore::Types::Value::String (check smart_initializer gem)
   attribute :city,    'value.string'
   property :location, 'value.string'
   property :capital,  SmartCore::Types::Value::Boolean
