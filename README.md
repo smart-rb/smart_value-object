@@ -42,7 +42,7 @@ class Address < SmartCore::ValueObject
   attribute :country, 'value.string' # an alias of SmartCore::Types::Value::String (check smart_initialzer gem)
   attribute :city,    'value.string'
   property :location, 'value.string'
-  property :capital,  SmartCore::Types::Value::Boolen
+  property :capital,  SmartCore::Types::Value::Boolean
 end
 
 khabarovsk = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
