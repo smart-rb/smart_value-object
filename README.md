@@ -1,4 +1,4 @@
-# SmartCore::ValueObject &middot; [![Gem Version](https://badge.fury.io/rb/smart_value-object.svg)](https://badge.fury.io/rb/smart_value-object) [![Build Status](https://travis-ci.org/smart-rb/smart_value-object.svg?branch=master)](https://travis-ci.org/smart-rb/smart_value-object)
+# SmartCore::ValueObject &middot; [![Gem Version](https://badge.fury.io/rb/smart_value-object.svg)](https://badge.fury.io/rb/smart_value-object)
 
 Value Object pattern realized in scope of Ruby.
 
@@ -78,6 +78,12 @@ khabarovsk == another_city # => false
 khabarovsk.to_a # => [khabarovsk]
 khabarovsk.each { |entity| puts entity } # => outputs itself
 ```
+
+---
+
+## Roadmap
+
+- Migrate to `GitHub Actions`;
 
 ---
 
