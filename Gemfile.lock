@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    smart_value-object (0.1.0)
+    smart_value-object (0.2.0)
       smart_initializer (~> 0.5)
 
 GEM
