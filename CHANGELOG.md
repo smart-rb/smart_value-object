@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Added
+- Support for **Ruby@3**;
+
 ### Changed
 - No more `TravisCI` (TODO: migrate to `GitHub Actions`);
 

@@ -75,14 +75,18 @@ RSpec.describe 'Smoke tests' do
       expect(saint_petersburg_address).not_to respond_to(:cords=)
 
       expect(saint_petersburg_address.to_h).to match({
-          city: 'Saint-Petersburg',
+        city: 'Saint-Petersburg',
         street: 'Komenda',
         house: 5,
         cords: 0.1
       })
 
+      # rubocop:disable Lint/BinaryOperatorWithIdenticalOperands
+      # NOTE: redefined equality operator checking
       expect(khabarovsk_address == khabarovsk_address).to eq(true)
       expect(saint_petersburg_address == saint_petersburg_address).to eq(true)
+      # rubocop:enable Lint/BinaryOperatorWithIdenticalOperands
+
       expect(khabarovsk_address == saint_petersburg_address).to eq(false)
       expect(khabarovsk_address > saint_petersburg_address).to eq(false)
       expect(khabarovsk_address < saint_petersburg_address).to eq(false)

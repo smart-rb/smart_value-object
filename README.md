@@ -87,6 +87,29 @@ khabarovsk.each { |entity| puts entity } # => outputs itself
 
 ---
 
+## Build
+
+- run tests:
+
+```shell
+bundle exec rspec
+```
+
+- run code style checks:
+
+```shell
+bundle exec rubocop
+```
+
+- run code style checks with auto-correction:
+
+```shell
+bundle exec rubocop -A
+```
+
+
+---
+
 ## Contributing
 
 - Fork it ( https://github.com/smart-rb/smart_value-object )

@@ -59,6 +59,7 @@ module SmartCore::ValueObject::Interface::Comparable
     #
     # @api public
     # @since 0.1.0
+    # rubocop:disable Style/RedundantSelf
     def eql?(another_object)
       self.class <= another_object.class && (
         self.class.__params__.all? do |attribute|
@@ -71,5 +72,6 @@ module SmartCore::ValueObject::Interface::Comparable
       )
     end
     alias_method :==, :eql?
+    # rubocop:enable Style/RedundantSelf
   end
 end
