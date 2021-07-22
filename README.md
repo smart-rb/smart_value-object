@@ -1,6 +1,14 @@
-# SmartCore::ValueObject &middot; [![Gem Version](https://badge.fury.io/rb/smart_value-object.svg)](https://badge.fury.io/rb/smart_value-object)
+# SmartCore::ValueObject &middot; [![Supporting](https://github.com/Cado-Labs/cado-labs-logos/blob/main/cado_labs_badge.png)](https://github.com/Cado-Labs/) &middot; [![Gem Version](https://badge.fury.io/rb/smart_value-object.svg)](https://badge.fury.io/rb/smart_value-object)
 
 Value Object pattern realized in scope of Ruby.
+
+---
+
+<p>
+  <a href="https://github.com/Cado-Labs">
+    <img src="https://github.com/Cado-Labs/cado-labs-logos/blob/main/cado_labs_supporting.svg" alt="Supported by Cado Labs" />
+  </a>
+</p>
 
 ---
 
@@ -121,6 +129,12 @@ bundle exec rubocop -A
 ## License
 
 Released under MIT License.
+
+## Supporting
+
+<a href="https://github.com/Cado-Labs">
+  <img src="https://github.com/Cado-Labs/cado-labs-logos/blob/main/cado_labs_logo.png" alt="Supported by Cado Labs" />
+</a>
 
 ## Authors
 
