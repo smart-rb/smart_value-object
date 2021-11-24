@@ -12,7 +12,7 @@ Value Object pattern realized in scope of Ruby.
 
 ---
 
-## Major featurs
+## Major features
 
 - `attribute` and `property` semantics;
 - primitive immutability based on `#freeze` invocation;
