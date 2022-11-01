@@ -53,8 +53,8 @@ class Address < SmartCore::ValueObject
   property :capital,  SmartCore::Types::Value::Boolean
 end
 
-khabarovsk = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
-same_city = Address.new('Russia', 'Khabaovsk', location: '48.4814/135.0721', capital: false)
+khabarovsk = Address.new('Russia', 'Khabarovsk', location: '48.4814/135.0721', capital: false)
+same_city = Address.new('Russia', 'Khabarovsk', location: '48.4814/135.0721', capital: false)
 another_city = Address.new('Russia', 'Moscow', location: '59.9311/30.3609', capital: false)
 ```
 
@@ -72,7 +72,7 @@ khabarovsk.capital # => false
 ```ruby
 khabarovsk.to_h # or #as_hash or #to_hash
 # => returns:
-{ city: 'Russia', country: 'Khabaovsk', location: '48.4814/135.0721', capital: false }
+{ city: 'Russia', country: 'Khabarovsk', location: '48.4814/135.0721', capital: false }
 ```
 
 ```ruby
